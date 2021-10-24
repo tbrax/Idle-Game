@@ -1,0 +1,16 @@
+{"baseStats":{
+	"keys":["maxhealth","critchanceresist","critchance","critdamage","dodge","speed","damage","resist","resistTypeStart","health"],
+	"values":["100","0","0","50","0","-10","120","100","0","250"]},
+"damageType":{"keys":[],"values":[]},
+	"resistType":{
+	"keys":["fire","cold","slash","impact","pierce","psychic","dark"],
+	"values":["0","0","0","0","0","0","0"]},
+"startDeck":{
+	"keys":["Burn Down", "Oil Deluge", "Carrion Feast"],
+	"values":["1","1","1"]},
+"startPassives":{
+	"keys":["Reactive Ignition"],
+	"values":["1"]},
+"races":["elemental"],
+"charName":"Oil Ooze",
+"imageID":"oilooze0"}

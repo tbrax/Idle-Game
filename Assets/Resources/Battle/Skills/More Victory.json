@@ -1,0 +1,20 @@
+{"cardName":"More Victory",
+"effects":[
+
+
+{"act":{"actionStats":{"keys":["actionType","targets"],
+"values":["debuff","select"]},
+"buf":{"duration":0.0,
+	"tickNum":-1,
+	"tickTriggerWhen":"enemydie",
+	"tickTriggerDo":"useskill[Reduce Cooldowns 0",
+	"name":"More Victory",
+	"desc":"Reduce cooldowns when an enemy dies"
+
+}},
+"criteria":[],
+"targets":"self"}
+
+],
+"cardDesc":"Reduce cooldowns when an enemy dies",
+"cooldown":0.0}

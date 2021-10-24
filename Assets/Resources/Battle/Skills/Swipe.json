@@ -1,0 +1,4 @@
+{"cardName":"Swipe",
+"cooldown":"5.0",
+"effects":[{"act":{"actionStats":{"keys":["actionType","elementType","value","targets"],
+"values":["dealdamage","fire","12.0","select"]}},"targets":"select"}],"cardDesc":"actionType-dealdamage elementType-fire value-12.0 targets-select "}

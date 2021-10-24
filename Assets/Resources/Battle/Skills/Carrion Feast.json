@@ -1,0 +1,62 @@
+{"cardName":"Carrion Feast",
+"effects":[
+{"act":{"actionStats":{"keys":["actionType","set"],
+                "values":["settrigger","accuracy"]}},"targets":"target"
+            },
+{"act":{"actionStats":{"keys":["actionType","value"],
+                "values":["playsound","crunch0"]}},"targets":"target"
+            },
+
+{"act":{"actionStats":{"keys":["actionType","elementType","value"],
+                "values":["dealdamage","pierce","10.0"]}},
+		"targets":"select",
+		"criteria":[{"check":"accuracytriggercheck","compareType":"==","against":"1"}]
+            },
+{"act":{"actionStats":{"keys":["actionType","elementType","value"],
+                "values":["heal","heal","5.0"]}},
+		"targets":"self",
+		"criteria":[{"check":"enemydead","compareType":">=","against":"1"}]
+            },
+
+            {"act":
+                {
+                "actionStats":
+                 {
+                        "keys":["actionType","targets"],
+                        "values":["animation","select"]
+                 },
+                    "ani":  
+                    {
+                        "totalDuration":0.5,
+			"scale":1.3,
+                        "name":"bite0"
+                    }
+                },
+		"criteria":[{"check":"accuracytriggercheck","compareType":"==","against":"1"}],
+		"targets":"target"
+            },
+            {"act":
+                {
+                "actionStats":
+                 {
+                        "keys":["actionType","targets"],
+                        "values":["animation","select"]
+                 },
+                    "ani":  
+                    {
+                        "totalDuration":1.0,
+			"repeat":true,
+			"repeatDuration":0.5,
+			"scale":1.3,
+                        "name":"sparkle0"
+                    }
+                },
+		"criteria":[{"check":"enemydead","compareType":">=","against":"1"}],
+		"targets":"self"
+            }
+
+
+
+],
+"cardDesc":"Deals pierce damage. If an enemy is dead, heal.",
+"cooldown":9.0}

@@ -1,0 +1,55 @@
+{"cardName":"Side Swipe",
+"cooldown":"17.0",
+"effects":[
+            {"act":{"actionStats":{"keys":["actionType","set"],
+                "values":["settrigger","accuracy"]}},"targets":"allteam"
+            },
+
+	    {"act":{"actionStats":{"keys":["actionType","elementType","value","targets"],
+                "values":["dealdamage","slash","4.0","select"]}},
+		"targets":"allteam",
+		"criteria":[{"check":"accuracytriggercheck","compareType":"==","against":"1"}]
+            },
+	{"act":{"actionStats":{"keys":["actionType","value"],
+                "values":["playsound","slash1"]}},"targets":"target"
+            },
+
+            {"act":
+                {
+                "actionStats":
+                 {
+                        "keys":["actionType","targets"],
+                        "values":["debuff","select"]
+                 },
+                    "buf":  
+                    {
+                        "duration":10.0,
+                        "tickNum":5,
+                        "tickTriggerWhen":"tick",
+                        "tickTriggerDo":"useskill[LionBleedTick",
+			"name":"Bleed",
+			"desc":"Take Slash damage over time"
+                    }
+                },
+		"criteria":[{"check":"accuracytriggercheck","compareType":"==","against":"1"}],
+		"targets":"allteam"
+            },
+            {"act":
+                {
+                "actionStats":
+                 {
+                        "keys":["actionType","targets"],
+                        "values":["animation","select"]
+                 },
+                    "ani":  
+                    {
+                        "totalDuration":1.0,
+			"scale":1.2,
+                        "name":"slash0"
+                    }
+                },
+		"criteria":[{"check":"accuracytriggercheck","compareType":"==","against":"1"}],
+		"targets":"allteam"
+            }
+
+    ],"cardDesc":"Swipe at each enemy, causing them to take Slash damage. Also causes bleed, taking more Slash damage over time."}

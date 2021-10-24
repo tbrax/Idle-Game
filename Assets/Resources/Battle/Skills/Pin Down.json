@@ -1,0 +1,59 @@
+{"cardName":"Pin Down",
+"effects":[
+{"act":{"actionStats":{"keys":["actionType","set"],
+                "values":["settrigger","accuracy"]}},"targets":"target"
+            },
+{"act":{"actionStats":{"keys":["actionType","value"],
+                "values":["playsound","impact0"]}},"targets":"target"
+            },
+
+{"act":{"actionStats":{"keys":["actionType","targets"],
+"values":["debuff","select"]},
+"buf":{"duration":6.0,
+	"tickNum":1,
+	"tickTriggerWhen":"start",
+	"tickTriggerDo":"stat[speed[-25",
+	"name":"Reduced Speed",
+	"desc":"Reduced Speed"
+
+}},
+"criteria":[{"check":"accuracytriggercheck","compareType":"==","against":"1"}],
+"targets":"target"},
+
+{"act":{"actionStats":{"keys":["actionType","targets"],
+"values":["debuff","select"]},
+"buf":{"duration":6.0,
+	"tickNum":1,
+	"tickTriggerWhen":"start",
+	"tickTriggerDo":"stat[critchanceresist[-25",
+	"name":"Reduced Critical Resist",
+	"desc":"More likely to be hit by critical strikes"
+
+}},
+"criteria":[{"check":"accuracytriggercheck","compareType":"==","against":"1"}],
+"targets":"target"},
+
+
+            {"act":
+                {
+                "actionStats":
+                 {
+                        "keys":["actionType","targets"],
+                        "values":["animation","select"]
+                 },
+                    "ani":  
+                    {
+                        "totalDuration":1.0,
+			"scale":1.0,
+                        "name":"paw0"
+                    }
+                },
+		"criteria":[{"check":"accuracytriggercheck","compareType":"==","against":"1"}],
+		"targets":"target"
+            }
+
+
+
+],
+"cardDesc":"Reduces speed and critical resistance of target",
+"cooldown":10.0}

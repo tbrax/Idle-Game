@@ -1,0 +1,4 @@
+{"cardName":"Strike",
+"cooldown":"10.0",
+"effects":[{"act":{"actionStats":{"keys":["actionType","critchance","elementType","value","targets"],
+"values":["dealdamage","0","slash","10.0","select"]}},"targets":"select"}],"cardDesc":"Deals 10 damage"}

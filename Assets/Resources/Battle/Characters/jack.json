@@ -1,0 +1,11 @@
+{"baseStats":
+    {"keys":
+        ["maxhealth","initiative","luck","handsize","damage","resist","resistTypeStart","health"],
+        "values":["100","0","0","10","100","100","0","100"]},
+        "damageType":{"keys":[],"values":[]},
+        "resistType":{"keys":["fire","cold","energy"],
+            "values":["100","150","50"]},
+            "startDeck":{"keys":["Wack","Ice Storm","Lightning Strike"],
+                "values":["1","1","1"]},
+                "races":[],
+                "charName":"ch0"}

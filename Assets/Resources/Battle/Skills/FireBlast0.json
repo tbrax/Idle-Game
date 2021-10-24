@@ -1,0 +1,31 @@
+{"cardName":"FireBlast0",
+"cooldown":"5.0",
+"effects":[
+{"act":{"actionStats":{"keys":["actionType","elementType","value","accuracy"],
+"values":["dealdamage","fire","20.0","300"]}},"targets":"target"},
+
+{"act":{"actionStats":{"keys":["actionType","value"],
+                "values":["playsound","explosion0"]}},"targets":"target"
+            },
+
+            {"act":
+                {
+                "actionStats":
+                 {
+                        "keys":["actionType","targets"],
+                        "values":["animation","select"]
+                 },
+                    "ani":  
+                    {
+                        "totalDuration":1.0,
+			"scale":1.8,
+                        "name":"explosion0"
+                    }
+                },
+		"criteria":[],
+		"targets":"target"
+            }
+
+
+
+],"cardDesc":""}

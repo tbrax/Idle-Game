@@ -1,0 +1,20 @@
+{"cardName":"Head Start",
+"effects":[
+
+
+{"act":{"actionStats":{"keys":["actionType","targets"],
+"values":["debuff","select"]},
+"buf":{"duration":0.0,
+	"tickNum":-1,
+	"tickTriggerWhen":"selfstartbattle",
+	"tickTriggerDo":"useskill[Start Speed Boost",
+	"name":"Head Start",
+	"desc":"Gain speed when the battle starts"
+
+}},
+"criteria":[],
+"targets":"self"}
+
+],
+"cardDesc":"Gain speed for start of battle",
+"cooldown":0.0}

@@ -1,0 +1,45 @@
+{"cardName":"Start Speed Boost",
+"effects":[
+
+{"act":{"actionStats":{"keys":["actionType","targets"],
+"values":["debuff","select"]},
+"buf":{"duration":30.0,
+	"tickNum":1,
+	"tickTriggerWhen":"start",
+	"tickTriggerDo":"stat[speed[20",
+	"name":"Speed Boost",
+	"desc":"Gain 20 speed for 30 seconds"
+
+}},
+"criteria":[],
+"targets":"self"},
+
+
+	{"act":{"actionStats":{"keys":["actionType","value"],
+                "values":["playsound","woosh0"]}},"targets":"target"
+            },
+
+            {"act":
+                {
+                "actionStats":
+                 {
+                        "keys":["actionType","targets"],
+                        "values":["animation","select"]
+                 },
+                    "ani":  
+                    {
+                        "totalDuration":1.0,
+			"repeat":true,
+			"repeatDuration":0.2,
+			"scale":1.3,
+                        "name":"speed0"
+                    }
+                },
+		"criteria":[],
+		"targets":"self"
+            }
+
+
+],
+"cardDesc":"Gain Speed",
+"cooldown":1.0}

@@ -1,0 +1,64 @@
+{"cardName":"Oil Deluge",
+"effects":[
+{"act":{"actionStats":{"keys":["actionType","set"],
+                "values":["settrigger","accuracy"]}},"targets":"target"
+            },
+
+{"act":{"actionStats":{"keys":["actionType","value"],
+                "values":["playsound","splat0"]}},"targets":"target"
+            },
+{"act":{"actionStats":{"keys":["actionType","targets"],
+"values":["debuff","select"]},
+"buf":{"duration":0.0,
+	"tickNum":1,
+	"tickTriggerWhen":"selftakedamagetypefire",
+	"tickTriggerDo":"useskill[FireBlast0",
+	"name":"Oil Deluge",
+	"desc":"Taking fire damage will cause more fire damage."
+
+}},
+
+
+"criteria":[
+		{"check":"accuracytriggercheck","compareType":"==","against":"1"},
+		{"check":"targethasdebuff[Oil Deluge]","compareType":"==","against":"0"}
+
+],
+"targets":"target"},
+
+{"act":{"actionStats":{"keys":["actionType","targets"],
+"values":["debuff","select"]},
+"buf":{"duration":7.0,
+	"tickNum":1,
+	"tickTriggerWhen":"start",
+	"tickTriggerDo":"stat[accuracy[-10",
+	"name":"Reduced Accuracy",
+	"desc":"Reduced Accuracy"
+
+}},
+"criteria":[{"check":"accuracytriggercheck","compareType":"==","against":"1"}],
+"targets":"target"},
+
+
+            {"act":
+                {
+                "actionStats":
+                 {
+                        "keys":["actionType","targets"],
+                        "values":["animation","select"]
+                 },
+                    "ani":  
+                    {
+                        "totalDuration":1.0,
+			"scale":1.0,
+                        "name":"oilsplat0"
+                    }
+                },
+		"criteria":[],
+		"targets":"target"
+            }
+
+
+],
+"cardDesc":"Covers the target in oil, reducing accuracy and causing them to take more fire damage the next time they take fire damage.",
+"cooldown":10.0}

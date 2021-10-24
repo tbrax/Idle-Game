@@ -1,0 +1,13 @@
+{"baseStats":
+{"keys":["maxhealth","critchanceresist","critchance","critdamage","dodge","speed","damage","resist","resistTypeStart","health"],
+"values":["100","0","0","50","0","10","100","100","0","150"]},
+"damageType":{"keys":[],"values":[]},
+"resistType":{
+		"keys":["fire","cold","slash","impact","pierce","psychic","dark"],
+		"values":["0","0","0","0","0","0","0"]},
+"startDeck":{
+		"keys":["Side Swipe", "Pin Down", "Carrion Feast"],
+		"values":["1","1","1"]},
+"startPassives":{"keys":["Head Start"],"values":["1"]},
+
+"races":["beast"],"charName":"Hunter Lion","imageID":"lion0"}

@@ -1,0 +1,20 @@
+{"cardName":"Reactive Ignition",
+"effects":[
+
+
+{"act":{"actionStats":{"keys":["actionType","targets"],
+"values":["debuff","select"]},
+"buf":{"duration":3.0,
+	"tickNum":-1,
+	"tickTriggerWhen":"selftakedamagetypefire",
+	"tickTriggerDo":"useskill[FlameBurst0",
+	"name":"Reactive Ignition",
+	"desc":"Deal fire damage to all enemies when taking fire damage"
+
+}},
+"criteria":[],
+"targets":"self"}
+
+],
+"cardDesc":"Deal fire damage to all enemies when taking fire damage",
+"cooldown":0.0}
